@@ -33,7 +33,7 @@ export class SignInComponent {
       response => {
         console.log('Inicio de sesión exitoso', response);
         // Aquí puedes guardar el token en el almacenamiento local y redirigir al usuario
-        // this.router.navigate(['/dashboard']);
+        this.router.navigate(['/introduction']);
       },
       error => {
         console.error('Error en el inicio de sesión', error);
