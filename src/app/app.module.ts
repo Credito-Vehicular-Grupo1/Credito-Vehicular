@@ -8,21 +8,29 @@ import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {RouterOutlet} from "@angular/router";
 import { AppRoutingModule } from './app-routing.module';
+import {AuthService} from "./services/auth.service";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import { HttpClientModule } from "@angular/common/http";
+import { IntroduccionComponent } from './pages/introduccion/introduccion.component';
+import { PlanComponent } from './pages/plan/plan.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    IntroduccionComponent,
+    PlanComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     RouterOutlet,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService, MatDatepickerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

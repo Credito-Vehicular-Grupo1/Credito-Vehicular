@@ -1,12 +1,21 @@
 <div class="form-container">
-  <form (ngSubmit)="onSubmit(signUpForm.value)" [formGroup]="signUpForm">
-    <h2 class="form-title">Regístrate</h2>
-    <!-- Campos del formulario -->
-    <input type="text" formControlName="firstName" placeholder="Nombre">
-    <input type="text" formControlName="lastName" placeholder="Apellido">
-    <input type="text" formControlName="email" placeholder="Email">
-    <input type="password" formControlName="password" placeholder="Contraseña">
-    <!-- ... otros elementos del formulario ... -->
+  <form (ngSubmit)="onSubmit()" [formGroup]="signUpForm">
+    <div>
+      <label for="firstName">Nombre</label>
+      <input type="text" id="firstName" formControlName="firstName">
+    </div>
+    <div>
+      <label for="lastName">Apellido</label>
+      <input type="text" id="lastName" formControlName="lastName">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" formControlName="email">
+    </div>
+    <div>
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" formControlName="password">
+    </div>
     <button type="submit" [disabled]="!signUpForm.valid">Registrarse</button>
     <!-- Botón para ir a la pantalla de sign-in -->
     <button type="button" (click)="goToSignIn()">¿Ya tienes cuenta? Inicia sesión</button>
