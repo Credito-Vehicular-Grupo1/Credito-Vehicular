@@ -1,0 +1,70 @@
+.sign-in-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura completa de la pantalla */
+  background-color: #f4f4f4; /* O el color de fondo que prefieras */
+}
+
+.sign-in-container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Asegura que todo esté centrado */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.login-image {
+  display: block;
+  margin: 0 auto 20px; /* Centra la imagen y añade espacio debajo */
+  max-width: 45%; /* O el tamaño que prefieras, manteniéndolo responsivo */
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  text-align: left; /* Alinea la etiqueta a la izquierda */
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: calc(100% - 16px); /* Resta el padding para un ancho completo */
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+button[type="button"] {
+  background-color: transparent; /* Fondo transparente para un estilo diferente */
+  color: #007bff;
+  border: 1px solid #007bff;
+  margin-top: 15px;
+}
+
+button[disabled] {
+  background-color: #ccc;
+}

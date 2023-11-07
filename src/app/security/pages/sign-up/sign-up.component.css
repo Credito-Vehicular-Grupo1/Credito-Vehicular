@@ -1,0 +1,90 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura completa de la pantalla */
+  background-color: #ececec;
+}
+
+/* Estilo del título */
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos generales del formulario */
+form {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los campos de entrada */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilos específicos para el campo de entrada con error */
+input.ng-invalid.ng-touched {
+  border-color: #ff5c5c;
+}
+
+/* Estilos para el botón de registro */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Mensaje de error para validación */
+.error-message {
+  color: #ff5c5c;
+  font-size: 14px;
+}
+
+/* Mensaje de éxito */
+.success-message {
+  color: #28a745;
+  font-size: 14px;
+}
+
+/* Estilos adicionales para el botón de sign-in */
+button[type="button"] {
+  background: none;
+  border: none;
+  color: #0066ee;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  text-decoration: underline;
+}

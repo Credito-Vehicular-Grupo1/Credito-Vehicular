@@ -1,0 +1,14 @@
+<div class="form-container">
+  <form (ngSubmit)="onSubmit(signUpForm.value)" [formGroup]="signUpForm">
+    <h2 class="form-title">Regístrate</h2>
+    <!-- Campos del formulario -->
+    <input type="text" formControlName="firstName" placeholder="Nombre">
+    <input type="text" formControlName="lastName" placeholder="Apellido">
+    <input type="text" formControlName="email" placeholder="Email">
+    <input type="password" formControlName="password" placeholder="Contraseña">
+    <!-- ... otros elementos del formulario ... -->
+    <button type="submit" [disabled]="!signUpForm.valid">Registrarse</button>
+    <!-- Botón para ir a la pantalla de sign-in -->
+    <button type="button" (click)="goToSignIn()">¿Ya tienes cuenta? Inicia sesión</button>
+  </form>
+</div>
