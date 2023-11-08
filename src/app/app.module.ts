@@ -13,6 +13,9 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import { HttpClientModule } from "@angular/common/http";
 import { IntroduccionComponent } from './pages/introduccion/introduccion.component';
 import { PlanComponent } from './pages/plan/plan.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { PlanComponent } from './pages/plan/plan.component';
     ReactiveFormsModule,
     RouterOutlet,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [AuthService, MatDatepickerModule],
   bootstrap: [AppComponent]

@@ -1,0 +1,50 @@
+/* introduccion.component.css */
+.active-button {
+  color: #ffffff; /* O el color que quieras para el texto */
+  background-color: #3f51b5; /* O el color que quieras para el fondo */
+  /* Puedes añadir una sombra o cualquier otro estilo que indique que el botón está activo */
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),
+  0px 8px 10px 1px rgba(0,0,0,0.14),
+  0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduction-image {
+  width: 50px; /* O el tamaño que prefieras, manteniéndolo responsivo */
+  height: auto;
+}
+
+.mat-card {
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  background-color: #e0e0e0;
+}
+
+.active-link {
+  /* estilos para el botón activo, por ejemplo: */
+  font-weight: bold;
+  color: #fff;
+}
