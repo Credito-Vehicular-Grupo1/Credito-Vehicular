@@ -1,25 +1,35 @@
 <div class="app-container">
-<mat-toolbar color="primary">
-  <img alt="introduction image" src="assets/images/logo.jpeg" class="introduction-image" />
-  <span class="example-spacer"></span>
-  <button mat-button routerLink="/introduction">Introducción</button>
-  <button mat-button routerLink="/plan" routerLinkActive="active-link">Plan de pago</button>
-  <!-- Añadir más botones según sea necesario -->
-</mat-toolbar>
+  <mat-toolbar>
+    <button mat-button routerLink="/introduction" routerLinkActive="active-link" class="btn-volver" style="color: white;">Volver</button>
+    <h3 class="title-nav">Oferta Vehicular</h3>
+    <span class="example-spacer"></span>
+    <div class="btn">
+      <button class="btn-img" mat-button>
+        <img src="assets/images/logo.jpeg" alt="introduction-image" routerLink="/introduccion" style="width: 80px; height: 80px">
+      </button>
+    </div>
+    <!-- Añadir más botones según sea necesario -->
+  </mat-toolbar>
 
-<div class="content">
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>Estima el financiamiento para tu automóvil y adquiere el vehículo que siempre has anhelado</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <img mat-card-image src="assets/images/carro-dinero.PNG" alt="Imagen de monedas y coche">
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button routerLink="/plan" color="primary">Solicitar Crédito</button>
-    </mat-card-actions>
-  </mat-card>
-</div>
+  <div class="container">
+    <div class="master-column">
+      <button class="a1" (click)="showContent('Ventajas')" >Ventajas</button>
+      <button class="a2" (click)="showContent('Requisitos')">Requisitos</button>
+      <button class="a3" (click)="showContent('Tasas')">Tasas</button>
+      <button class="a4" (click)="showContent('Tu Eliges')">Tu Eliges</button>
+      <!-- Agrega más botones según sea necesario -->
+    </div>
+    <div class="detail-column">
+      <div *ngIf="selectedContent">
+        <h2>{{ selectedContent }}</h2>
+        <br>
+        <p>{{ contentMap[selectedContent ] }}</p>
+      </div>
 
+    </div>
+    <div>
+      <button mat-button routerLink="/introduction" routerLinkActive="active-link" class="btn-realizar" style="color: white;">Realizar Calculo</button>
+    </div>
+    </div>
 
 </div>

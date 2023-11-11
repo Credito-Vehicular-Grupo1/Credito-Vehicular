@@ -8,15 +8,6 @@
   0px 3px 14px 2px rgba(0,0,0,0.12);
 }
 
-.example-spacer {
-  flex: 1 1 auto;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
 .content {
   flex-grow: 1;
@@ -39,4 +30,118 @@
   /* estilos para el botón activo, por ejemplo: */
   font-weight: bold;
   color: #fff;
+}
+
+/*toolbar*/
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0; /* Ajusta el margen superior e inferior según tus necesidades */
+  background-color: white;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.btn-volver{
+  background-color: rgba(0, 128, 44, 1);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Para aplicar la curva al botón */
+  font-size: 20px;
+}
+.title-nav{
+  padding-left: 580px;
+  text-align: center;
+  font-size: 60px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+.btn-img {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  justify-items: center;
+}
+
+/*container*/
+.container {
+  display: flex;
+  margin: 60px;
+}
+
+.master-column {
+
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: rgba(93, 239, 108, 0.56);
+  border-radius: 20px; /* Borde redondeado */
+  margin-right: 50px; /* Espacio entre las columnas */
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.master-column button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: 1px solid #4CAF50; /* Color del borde verde */
+  border-radius: 25px; /* Bordes redondeados */
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: black; /* Color del texto blanco */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Agrega una transición al cambio de color al pasar el ratón */
+  line-height: 1.8; /* Ajusta la altura de línea para centrar verticalmente */
+  font-size: 30px;
+}
+.master-column button:hover {
+  background-color: rgba(0, 128, 44, 1); /* Cambia de color al pasar el ratón */
+}
+.a1{
+  margin-left:140px;
+}
+.a2{
+  margin-left:125px;
+}
+.a3{
+  margin-left:155px;
+}
+.a4{
+  margin-left:135px;
+}
+.detail-column {
+  flex: 2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: rgba(93, 239, 108, 0.56);
+  border-radius: 10px; /* Borde redondeado */
+  justify-content: center;
+}
+.btn-realizar{
+  margin-top: 180px; /* Ajusta el margen superior del botón según tus necesidades */
+  margin-left: 150px;
+  background-color: rgba(0, 128, 44, 1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Para aplicar la curva al botón */
+  font-size: 25px;
 }
