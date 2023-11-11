@@ -19,32 +19,86 @@
 }
 
 .content {
-  flex-grow: 1;
-  padding: 20px;
+  flex-grow: 2;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.container{
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  grid-gap: 2rem;
+}
+.boxB{
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-boxB{
+  margin-top: 50px; /* Ajusta el margen superior del botón según tus necesidades */
+  margin-left: 190px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Para aplicar la curva al botón */
+  font-size: 25px;
+}
+
+.txt-boxB{
+  font-size: 30px;
+}
 .introduction-image {
-  width: 50px; /* O el tamaño que prefieras, manteniéndolo responsivo */
-  height: auto;
+  width: 10px; /* O el tamaño que prefieras, manteniéndolo responsivo */
+  height: 5px;
 }
 
 .mat-card {
   max-width: 600px;
   margin-top: 20px;
 }
-
-.footer {
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-  bottom: 0;
-  background-color: #e0e0e0;
-}
-
 .active-link {
   /* estilos para el botón activo, por ejemplo: */
   font-weight: bold;
   color: #fff;
 }
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+.btn-img {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  justify-items: center;
+}
+.btn-cliente{
+  background-color: rgba(0, 128, 44, 1);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Para aplicar la curva al botón */
+  font-size: 20px;
+}
+.title-nav{
+  padding-left: 500px;
+  text-align: center;
+  font-size: 60px;
+}
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0; /* Ajusta el margen superior e inferior según tus necesidades */
+  background-color: white;
+}
+

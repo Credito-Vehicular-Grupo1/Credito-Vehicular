@@ -1,26 +1,28 @@
 <!-- introduccion.component.html -->
 <div class="app-container">
-  <mat-toolbar color="primary">
-    <img alt="introduction image" src="assets/images/logo.jpeg" class="introduction-image" />
+  <mat-toolbar>
+    <button mat-button routerLink="/introduction" routerLinkActive="active-link" class="btn-cliente" style="color: white;">Clientes</button>
+    <h3 class="title-nav">Crédito Vehicular Inteligente</h3>
     <span class="example-spacer"></span>
-    <button mat-button routerLink="/introduction" routerLinkActive="active-link">Introducción</button>
-    <button mat-button routerLink="/plan">Plan de pago</button>
+    <div class="btn">
+      <button class="btn-img" mat-button>
+        <img src="assets/images/logo.jpeg" alt="introduction-image" routerLink="/introduccion" style="width: 80px; height: 80px">
+      </button>
+    </div>
     <!-- Añadir más botones según sea necesario -->
   </mat-toolbar>
 
   <div class="content">
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title>Estima el financiamiento para tu automóvil y adquiere el vehículo que siempre has anhelado</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
+    <div class="container">
+      <div class="boxA">
         <img mat-card-image src="assets/images/carro-dinero.PNG" alt="Imagen de monedas y coche">
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button routerLink="/plan" color="primary">Solicitar Crédito</button>
-      </mat-card-actions>
-    </mat-card>
+      </div>
+      <div class="boxB">
+          <h2 class="txt-boxB">Estima el financiamiento para tu automóvil y adquiere el vehículo que siempre has anhelado</h2>
+          <div>
+            <button mat-raised-button routerLink="/plan" class="btn-boxB" style="background-color:rgba(0, 128, 44, 1); color: white;" >Solicitar Crédito</button>
+          </div>
+      </div>
+    </div>
   </div>
-
-
 </div>

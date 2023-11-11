@@ -35,14 +35,6 @@
   margin-top: 20px;
 }
 
-.footer {
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-  bottom: 0;
-  background-color: #e0e0e0;
-}
-
 .active-link {
   /* estilos para el botón activo, por ejemplo: */
   font-weight: bold;
