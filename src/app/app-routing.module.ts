@@ -6,6 +6,7 @@ import {SignUpComponent} from "./security/pages/sign-up/sign-up.component";
 import {IntroduccionComponent} from "./pages/introduccion/introduccion.component";
 import {PlanComponent} from "./pages/plan/plan.component";
 import {FooterComponent} from './pages/footer/footer.component';
+import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
 
 const routes: Routes = [
   { path: 'sign-in', component: SignInComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: '', component: SignInComponent },
   { path: 'introduction', component: IntroduccionComponent },
   { path: 'plan', component: PlanComponent},
-  { path: 'footer', component: FooterComponent}
+  { path: 'footer', component: FooterComponent},
+  { path: 'configuracion', component: ConfiguracionComponent}
 ];
 
 @NgModule({

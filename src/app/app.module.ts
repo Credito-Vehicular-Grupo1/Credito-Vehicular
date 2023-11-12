@@ -17,6 +17,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 import { FooterComponent } from './pages/footer/footer.component';
+import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,9 @@ import { FooterComponent } from './pages/footer/footer.component';
     SignUpComponent,
     IntroduccionComponent,
     PlanComponent,
-    FooterComponent
+    FooterComponent,
+    ConfiguracionComponent
+
   ],
   imports: [
     BrowserModule,
