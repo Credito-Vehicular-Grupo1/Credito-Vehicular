@@ -1,0 +1,70 @@
+/* Estilos generales para la configuración */
+.configuracion {
+  background-color: #ffffff; /* Fondo blanco para todo el componente */
+  max-width: 700px; /* Ajusta este valor según el diseño de tu sitio */
+  margin: auto;
+  padding: 32px;
+  border-radius: 16px; /* Bordes redondeados suaves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+  font-family: 'Roboto', sans-serif; /* Fuente común en Material Design */
+}
+
+/* Estilo para la barra de herramientas y el título */
+mat-toolbar {
+  background-color: #4caf50; /* Color de fondo de la barra de herramientas */
+  color: white; /* Texto blanco para la barra de herramientas */
+  border-radius: 8px; /* Bordes redondeados para la barra de herramientas */
+  margin-bottom: 24px; /* Espacio debajo de la barra de herramientas */
+}
+
+.configuracion h2 {
+  flex: 1;
+  font-size: 24px; /* Tamaño del título */
+  font-weight: 400; /* Peso de la fuente del título */
+  margin: 0; /* Quitar márgenes predeterminados */
+}
+
+/* Estilización de los contenedores de los campos de formulario y botones radio */
+mat-form-field, .mat-radio-group {
+  background-color: #e8f5e9; /* Fondo verde claro para los campos de formulario */
+  border-radius: 20px; /* Bordes redondeados para los campos */
+  padding: 8px 16px; /* Espaciado interno para los campos */
+  margin-bottom: 16px; /* Espaciado entre los campos de formulario */
+}
+
+/* Ajustes para las etiquetas de los campos de formulario y botones radio */
+mat-label, .mat-radio-button {
+  color: #4caf50; /* Color de texto verde para coincidir con el esquema de colores */
+}
+
+/* Estilos para los botones radio */
+.mat-radio-button {
+  margin: 4px 12px; /* Espaciado alrededor de los botones radio */
+}
+
+/* Estilo para el botón principal de acción */
+button.mat-raised-button {
+  background-color: #4caf50; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  margin-top: 20px; /* Espaciado superior del botón */
+  padding: 16px; /* Espaciado vertical interno del botón */
+  font-size: 16px; /* Tamaño de la fuente del botón */
+  border-radius: 20px; /* Bordes redondeados para el botón */
+  box-shadow: none; /* Sin sombra para el botón */
+}
+
+button.mat-raised-button:hover {
+  background-color: #43a047; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* Ajustes para los inputs con matInput */
+input[matInput] {
+  border: none; /* Quitar bordes predeterminados */
+  border-radius: 4px; /* Bordes redondeados suaves para el input */
+}
+
+/* Estilos para errores de validación */
+.ng-invalid.ng-touched:not(form) {
+  border-color: #e53935; /* Color de borde para campos inválidos */
+  background-color: #ffebee; /* Fondo rojo claro para campos inválidos */
+}

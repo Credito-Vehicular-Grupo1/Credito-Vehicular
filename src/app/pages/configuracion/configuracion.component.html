@@ -1,0 +1,71 @@
+<div class="configuracion">
+  <mat-toolbar>
+    <button mat-button routerLink="/introduction" routerLinkActive="active-link" class="btn-volver" style="color: white;">Volver</button>
+    <h2>Configuración del Cálculo</h2>
+    <span class="example-spacer"></span>
+    <div class="btn">
+      <button class="btn-img" mat-button>
+        <img src="assets/images/logo.jpeg" alt="introduction-image" routerLink="/introduction" style="width: 80px; height: 80px">
+      </button>
+    </div>
+  </mat-toolbar>
+  <form [formGroup]="configForm" (ngSubmit)="onSubmit()">
+
+    <div>
+      <mat-label>Periodo de Gracia</mat-label>
+      <mat-radio-group formControlName="periodoGracia">
+        <mat-radio-button value="Parcial">Parcial</mat-radio-button>
+        <mat-radio-button value="Total">Total</mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <div>
+      <mat-label>Tipo de moneda</mat-label>
+      <mat-radio-group formControlName="tipoMoneda">
+        <mat-radio-button value="Soles">Soles</mat-radio-button>
+        <mat-radio-button value="Dolares">Dolares</mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <div>
+      <mat-label>Tipo de Tasa</mat-label>
+      <mat-radio-group formControlName="tipoTasa">
+        <mat-radio-button value="TEA">TEA</mat-radio-button>
+        <mat-radio-button value="TNA">TNA</mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <!-- Solo usa mat-form-field para inputs, selects, etc. -->
+    <mat-form-field appearance="fill">
+      <mat-label>Costo Total</mat-label>
+      <input matInput type="number" formControlName="costoTotal">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Cuota Inicial</mat-label>
+      <input matInput type="number" formControlName="cuotaInicial">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Tasa</mat-label>
+      <input matInput type="number" formControlName="tasa">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Costo de oportunidad</mat-label>
+      <input matInput type="number" formControlName="cok">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Numero de periodo de Gracia</mat-label>
+      <input matInput type="number" formControlName="nPeriodoGracia">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Numero de cuotas</mat-label>
+      <input matInput type="number" formControlName="nCuotas">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">CALCULAR</button>
+  </form>
+</div>
