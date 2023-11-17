@@ -1,7 +1,7 @@
 <div class="app-container">
   <mat-toolbar>
     <button mat-button routerLink="/introduction" routerLinkActive="active-link" class="btn-volver" style="color: white;">Volver</button>
-    <h3 class="title-nav">Oferta Vehicular</h3>
+    <h3 class="title-nav">Todo lo que debes saber</h3>
     <span class="example-spacer"></span>
     <div class="btn">
       <button class="btn-img" mat-button>
@@ -16,15 +16,23 @@
       <button class="a1" (click)="showContent('Ventajas')" >Ventajas</button>
       <button class="a2" (click)="showContent('Requisitos')">Requisitos</button>
       <button class="a3" (click)="showContent('Tasas')">Tasas</button>
-      <button class="a4" (click)="showContent('Tu Eliges')">Tu Eliges</button>
+      <button class="a4" (click)="showContent('Consideraciones')">Consideraciones</button>
       <!-- Agrega más botones según sea necesario -->
     </div>
     <div class="detail-column">
-      <div *ngIf="selectedContent">
+      <!--<div *ngIf="selectedContent">
         <h2>{{ selectedContent }}</h2>
         <br>
         <p>{{ contentMap[selectedContent ] }}</p>
+      </div>-->
+      <div *ngIf="selectedContent">
+        <h2>{{ selectedContent }}</h2>
+        <br>
+        <div *ngFor="let line of contentMap[selectedContent].split('\n')">
+          <p>{{ line }}</p>
+        </div>
       </div>
+
 
     </div>
     <div>

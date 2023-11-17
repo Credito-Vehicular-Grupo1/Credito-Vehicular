@@ -8,6 +8,8 @@ import {PlanComponent} from "./pages/plan/plan.component";
 import {FooterComponent} from './pages/footer/footer.component';
 import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
 
+
+
 const routes: Routes = [
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
@@ -16,6 +18,7 @@ const routes: Routes = [
   { path: 'plan', component: PlanComponent},
   { path: 'footer', component: FooterComponent},
   { path: 'configuration', component: ConfiguracionComponent}
+
 ];
 
 @NgModule({
