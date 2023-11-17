@@ -20,11 +20,19 @@
       <!-- Agrega más botones según sea necesario -->
     </div>
     <div class="detail-column">
-      <div *ngIf="selectedContent">
+      <!--<div *ngIf="selectedContent">
         <h2>{{ selectedContent }}</h2>
         <br>
         <p>{{ contentMap[selectedContent ] }}</p>
+      </div>-->
+      <div *ngIf="selectedContent">
+        <h2>{{ selectedContent }}</h2>
+        <br>
+        <div *ngFor="let line of contentMap[selectedContent].split('\n')">
+          <p>{{ line }}</p>
+        </div>
       </div>
+
 
     </div>
     <div>
