@@ -41,9 +41,9 @@ export class PlanComponent {
 
     'Requisitos': 'Es necesario que tengas un ingreso mensual bruto mínimo de S/ 1,500.\nEs obligatorio afiliarse a un seguro vehicular durante el plazo total del crédito.\nBuen comportamiento de pago en el BK y sistema financiero.\nNo contar con multas de los últimos procesos electorales.nEvaluación de Riesgo Crediticio',
 
-    'Tasas': 'La TEA para crédito en soles: desde 8.49% hasta 20.26%\nLa TEA para crédito en dólares: desde 8.49% hasta 20.22%',
+    'Tasas': 'Podras elegir el tipo de tasa que tu deseas, ya sea, Tasa Nominal o Tasa Efectiva',
 
-    'Tu Eliges': 'Plazo del Crédito: 2 años o 3 años',
+    'Consideraciones': 'Podrás acercarte a cualquiera de nuestras agencias a nivel nacional para las siguientes solicitudes:\n1.Información en el caso de fallecimiento del titular de la cuenta\n2.Solicitudes de resolución del contrato\n3.Pagos anticipados',
     // Agrega más contenido según sea necesario
   };
 

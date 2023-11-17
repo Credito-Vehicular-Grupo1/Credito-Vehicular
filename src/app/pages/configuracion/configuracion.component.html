@@ -1,6 +1,6 @@
 <div class="configuracion">
   <mat-toolbar>
-    <button mat-button routerLink="/introduction" routerLinkActive="active-link" class="btn-volver" style="color: white;">Volver</button>
+    <button mat-button routerLink="/plan" routerLinkActive="active-link" class="btn-volver" style="color: white;">Volver</button>
     <h2>Configuración del Cálculo</h2>
     <span class="example-spacer"></span>
     <div class="btn">
@@ -10,7 +10,6 @@
     </div>
   </mat-toolbar>
   <form [formGroup]="configForm" (ngSubmit)="onSubmit()">
-
     <div>
       <mat-label>Periodo de Gracia</mat-label>
       <mat-radio-group formControlName="periodoGracia">
