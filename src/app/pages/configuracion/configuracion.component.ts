@@ -20,8 +20,8 @@ export class ConfiguracionComponent {
       cuotaInicial: ['', [Validators.required]],
       tasa: ['', [Validators.required]],
       cok: ['', [Validators.required]],
-      nPeriodoGracia: ['', [Validators.required]],
-      nCuotas: ['', [Validators.required]]
+      numeroPeriodoGracia: ['', [Validators.required]],
+      periodo: ['', [Validators.required]]
     });
   }
 
