@@ -27,6 +27,7 @@ import { ConfiguracionComponent } from './pages/configuracion/configuracion.comp
 // Servicios
 import { AuthService } from "./services/auth.service";
 import { PlanService } from "./services/plan.service";
+import { OfertasComponent } from './component/ofertas/ofertas.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PlanService } from "./services/plan.service";
     IntroduccionComponent,
     PlanComponent,
     FooterComponent,
-    ConfiguracionComponent
+    ConfiguracionComponent,
+    OfertasComponent
   ],
   imports: [
     BrowserModule,
