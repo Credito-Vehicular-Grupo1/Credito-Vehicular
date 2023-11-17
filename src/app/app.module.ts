@@ -24,10 +24,11 @@ import { PlanComponent } from './pages/plan/plan.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
 
+
 // Servicios
 import { AuthService } from "./services/auth.service";
 import { PlanService } from "./services/plan.service";
-import { OfertasComponent } from './component/ofertas/ofertas.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { OfertasComponent } from './component/ofertas/ofertas.component';
     PlanComponent,
     FooterComponent,
     ConfiguracionComponent,
-    OfertasComponent
+
+
   ],
   imports: [
     BrowserModule,
