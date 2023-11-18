@@ -1,5 +1,8 @@
-<div class="form-container">
-  <form (ngSubmit)="onSubmit()" [formGroup]="signUpForm">
+<div class="form-container" style="background-image: url('assets/images/carro.jpg');; background-size: cover; background-position: center; text-align: center;">
+  <div class="sign-in-container" style="background-image: url('assets/images/inicio.jpg');; background-size: cover; background-position: center; text-align: center;">
+    <h2>Registrarse</h2>
+    <img src="assets/images/logo.jpeg" alt="Iniciar sesión" class="login-image">
+    <form (ngSubmit)="onSubmit()" [formGroup]="signUpForm">
     <div>
       <label for="firstName">Nombre</label>
       <input type="text" id="firstName" formControlName="firstName">
@@ -20,4 +23,5 @@
     <!-- Botón para ir a la pantalla de sign-in -->
     <button type="button" (click)="goToSignIn()">¿Ya tienes cuenta? Inicia sesión</button>
   </form>
+  </div>
 </div>
