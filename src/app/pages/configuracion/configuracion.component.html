@@ -84,6 +84,9 @@
       <mat-form-field appearance="fill" style="width: 90%">
         <mat-label>Número de periodo de Gracia</mat-label>
         <input matInput type="number" formControlName="numeroPeriodoGracia">
+        <mat-error *ngIf="configForm.get('numeroPeriodoGracia')?.hasError('max')">
+          La tasa debe ser menor o igual a 5.
+        </mat-error>
       </mat-form-field>
     </div>
 

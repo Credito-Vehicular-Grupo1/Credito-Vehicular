@@ -20,7 +20,7 @@ export class ConfiguracionComponent {
       cuotaInicial: ['', [Validators.required]],
       tasa: [8.49, [Validators.required, Validators.min(8.49), Validators.max(20.26)]],
       cok: ['', [Validators.required]],
-      numeroPeriodoGracia: ['', [Validators.required]],
+      numeroPeriodoGracia: ['', [Validators.required, Validators.max(5)]],
       periodo: ['', [Validators.required]]
     });
   }
@@ -31,7 +31,7 @@ export class ConfiguracionComponent {
         next: (response) => {
           console.log(response);
           // Aquí manejas la respuesta, como mostrar un mensaje de éxito o redirigir
-          this.router.navigate(['/plan']);
+          this.router.navigate(['/resultados']);
         },
         error: (error) => {
           console.error(error);

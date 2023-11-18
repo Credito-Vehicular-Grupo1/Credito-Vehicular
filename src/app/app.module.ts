@@ -31,6 +31,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { AuthService } from "./services/auth.service";
 import { PlanService } from "./services/plan.service";
 import { OfertaComponent } from './pages/oferta/oferta.component';
+import { ResultadosComponent } from './pages/resultados/resultados.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { OfertaComponent } from './pages/oferta/oferta.component';
     FooterComponent,
     ConfiguracionComponent,
     OfertaComponent,
+    ResultadosComponent,
 
 
 
