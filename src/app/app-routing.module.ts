@@ -7,6 +7,7 @@ import {IntroduccionComponent} from "./pages/introduccion/introduccion.component
 import {PlanComponent} from "./pages/plan/plan.component";
 import {FooterComponent} from './pages/footer/footer.component';
 import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
+import { OfertaComponent } from './pages/oferta/oferta.component';
 
 
 
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'introduction', component: IntroduccionComponent },
   { path: 'plan', component: PlanComponent},
   { path: 'footer', component: FooterComponent},
-  { path: 'configuration', component: ConfiguracionComponent}
+  { path: 'configuration', component: ConfiguracionComponent},
+  { path: 'oferta', component: OfertaComponent}
 
 ];
 

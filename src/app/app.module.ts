@@ -23,11 +23,13 @@ import { IntroduccionComponent } from './pages/introduccion/introduccion.compone
 import { PlanComponent } from './pages/plan/plan.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 // Servicios
 import { AuthService } from "./services/auth.service";
 import { PlanService } from "./services/plan.service";
+import { OfertaComponent } from './pages/oferta/oferta.component';
 
 
 @NgModule({
@@ -39,6 +41,8 @@ import { PlanService } from "./services/plan.service";
     PlanComponent,
     FooterComponent,
     ConfiguracionComponent,
+    OfertaComponent,
+
 
 
   ],
@@ -54,7 +58,8 @@ import { PlanService } from "./services/plan.service";
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatTabsModule
   ],
   providers: [
     // AuthService y PlanService ya están provistos en 'root' en su propia declaración y no es necesario incluirlos aquí

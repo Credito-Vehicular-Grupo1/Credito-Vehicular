@@ -1,0 +1,40 @@
+<!-- introduccion.component.html -->
+<div class="app-container">
+  <mat-toolbar>
+    <button mat-button routerLink="/introduction" routerLinkActive="active-link" class="btn-cliente" style="color: white;">Volver</button>
+    <h3 class="title-nav">Ofertas disponibles</h3>
+    <span class="example-spacer"></span>
+    <div class="btn">
+      <button class="btn-img" mat-button>
+        <img src="assets/images/logo.jpeg" alt="introduction-image" routerLink="/introduction" style="width: 80px; height: 80px">
+      </button>
+    </div>
+    <!-- Añadir más botones según sea necesario -->
+  </mat-toolbar>
+
+<!-- oferta.component.html -->
+<div class="mat-tab-container">
+  <mat-tab-group>
+    <mat-tab *ngFor="let oferta of ofertas">
+      <ng-template mat-tab-label>
+        <img [src]="oferta.imagen" alt="{{oferta.modelo}}" class="tab-icon">
+      </ng-template>
+      <div class="tab-content">
+        <img [src]="oferta.imagen" alt="{{oferta.modelo}}" class="oferta-imagen" (click)="verOferta(oferta)">
+        <div class="detalle-oferta">
+          <h4>{{oferta.modelo}}</h4>
+          <p>Detalles de la oferta:</p>
+          <ul>
+            <li>Precio: {{oferta.precio}}</li>
+            <li>Tiempo: {{oferta.tiempo}}</li>
+            <li>Cuota inicial: {{oferta.cuotaInicial}}</li>
+            <li>Tasa: {{oferta.tasa}}</li>
+          </ul>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+</div>
+
