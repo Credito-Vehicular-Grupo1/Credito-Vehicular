@@ -34,37 +34,59 @@
       </mat-radio-group>
     </div>
 
-    <!-- Solo usa mat-form-field para inputs, selects, etc. -->
-    <mat-form-field appearance="fill">
-      <mat-label>Costo Total</mat-label>
-      <input matInput type="number" formControlName="costoTotal">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-      <mat-label>Cuota Inicial</mat-label>
-      <input matInput type="number" formControlName="cuotaInicial">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-      <mat-label>Tasa</mat-label>
-      <input matInput type="number" formControlName="tasa">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-      <mat-label>Costo de oportunidad</mat-label>
-      <input matInput type="number" formControlName="cok">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-      <mat-label>Número de periodo de Gracia</mat-label>
-      <input matInput type="number" formControlName="numeroPeriodoGracia">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
+    <div>
       <mat-label>Periodo del credito (años)</mat-label>
-      <input matInput type="number" formControlName="periodo">
-    </mat-form-field>
+      <mat-radio-group formControlName="periodo">
+        <mat-radio-button value="2">2 años</mat-radio-button>
+        <mat-radio-button value="3">3 años</mat-radio-button>
+      </mat-radio-group>
+    </div>
 
-    <button mat-raised-button color="primary" type="submit">CALCULAR</button>
+    <!-- Solo usa mat-form-field para inputs, selects, etc. -->
+    <div>
+      <mat-form-field appearance="fill" style="width: 90%">
+        <mat-label>Costo Total</mat-label>
+        <input matInput type="number" formControlName="costoTotal">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill" style="width: 90%">
+        <mat-label>Cuota Inicial</mat-label>
+        <input matInput type="number" formControlName="cuotaInicial">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill" style="width: 90%">
+        <mat-label>Tasa</mat-label>
+        <input matInput type="number" formControlName="tasa">
+        <mat-error *ngIf="configForm.get('tasa')?.hasError('required')">
+          La tasa es obligatoria.
+        </mat-error>
+        <mat-error *ngIf="configForm.get('tasa')?.hasError('min')">
+          La tasa debe ser mayor o igual a 8.49.
+        </mat-error>
+        <mat-error *ngIf="configForm.get('tasa')?.hasError('max')">
+          La tasa debe ser menor o igual a 20.26.
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill" style="width: 90%">
+        <mat-label>Costo de oportunidad</mat-label>
+        <input matInput type="number" formControlName="cok">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill" style="width: 90%">
+        <mat-label>Número de periodo de Gracia</mat-label>
+        <input matInput type="number" formControlName="numeroPeriodoGracia">
+      </mat-form-field>
+    </div>
+
+    <button mat-raised-button color="primary" style="width: 100%" type="submit">CALCULAR</button>
   </form>
 </div>

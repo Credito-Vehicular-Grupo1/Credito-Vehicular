@@ -18,7 +18,7 @@ export class ConfiguracionComponent {
       tipoMoneda: ['', [Validators.required]],
       costoTotal: ['', [Validators.required]],
       cuotaInicial: ['', [Validators.required]],
-      tasa: ['', [Validators.required]],
+      tasa: [8.49, [Validators.required, Validators.min(8.49), Validators.max(20.26)]],
       cok: ['', [Validators.required]],
       numeroPeriodoGracia: ['', [Validators.required]],
       periodo: ['', [Validators.required]]

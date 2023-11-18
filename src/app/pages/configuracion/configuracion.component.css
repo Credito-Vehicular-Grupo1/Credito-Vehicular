@@ -11,10 +11,23 @@
 
 /* Estilo para la barra de herramientas y el título */
 mat-toolbar {
-  background-color: #4caf50; /* Color de fondo de la barra de herramientas */
-  color: white; /* Texto blanco para la barra de herramientas */
-  border-radius: 8px; /* Bordes redondeados para la barra de herramientas */
-  margin-bottom: 24px; /* Espacio debajo de la barra de herramientas */
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio equitativamente */
+  align-items: center; /* Centra los elementos verticalmente */
+  background-color: #4caf50; /* Color de fondo del toolbar */
+  color: white;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+.mat-toolbar-row {
+  width: 100%; /* Asegúrate de que la fila del toolbar ocupe todo el ancho */
+}
+.btn-img {
+  margin-left: 4rem; /* Añade margen a la izquierda de la imagen si es necesario */
+}
+
+.btn-volver {
+  margin-right: 4rem; /* Añade margen a la derecha del botón Volver si es necesario */
 }
 
 .configuracion h2 {
