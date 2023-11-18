@@ -24,6 +24,7 @@ import { PlanComponent } from './pages/plan/plan.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 // Servicios
@@ -59,7 +60,8 @@ import { OfertaComponent } from './pages/oferta/oferta.component';
     MatInputModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule
   ],
   providers: [
     // AuthService y PlanService ya están provistos en 'root' en su propia declaración y no es necesario incluirlos aquí
