@@ -29,7 +29,15 @@
             <li>Tiempo: {{oferta.tiempo}}</li>
             <li>Cuota inicial: {{oferta.cuotaInicial}}</li>
             <li>Tasa: {{oferta.tasa}}</li>
+            <!-- Verifica si hay información en tuEleccion y muéstrala -->
+            <p *ngIf="oferta.tuEleccion" class="tu-eleccion">Tu elección: {{oferta.tuEleccion.descripcion}}</p>
+            <li *ngIf="oferta.tuEleccion">Cuota mensual: {{oferta.tuEleccion.cuotaMensual}}</li>
+            <li *ngIf="oferta.tuEleccion">Meses: {{oferta.tuEleccion.meses}}</li>
           </ul>
+          <!-- Agrega la descripción adicional aquí -->
+          <p class="descripcion-adicional">
+            Los valores y montos mostrados por el simulador son referenciales
+          </p>
         </div>
       </div>
     </mat-tab>

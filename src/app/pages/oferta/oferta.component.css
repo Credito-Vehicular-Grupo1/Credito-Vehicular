@@ -94,3 +94,11 @@
 .detalle-oferta {
   text-align: center;
 }
+.tu-eleccion {
+  margin-top: 50px; /* Ajusta el valor según la separación que desees desde arriba */
+  margin-bottom: 10px; /* Ajusta el valor según la separación que desees desde abajo */
+}
+.descripcion-adicional {
+  font-size: 12px; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #777; /* Ajusta el color del texto según tus preferencias */
+}
