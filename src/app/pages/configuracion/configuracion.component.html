@@ -9,6 +9,8 @@
       </button>
     </div>
   </mat-toolbar>
+
+  <div>
   <form [formGroup]="configForm" (ngSubmit)="onSubmit()">
     <div>
       <mat-label>Periodo de Gracia</mat-label>
@@ -92,4 +94,5 @@
 
     <button mat-raised-button color="primary" style="width: 100%" type="submit">CALCULAR</button>
   </form>
+</div>
 </div>
