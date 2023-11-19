@@ -1,7 +1,20 @@
-<div class="resultados-container">
-  <h2>Resultados del Calculo</h2>
-  <div class="card">
-    <h3>Crédito Vehicular Inteligente</h3>
+<div class="resultados-container" style="background-image: url('assets/images/resf.jpg');; background-size: cover; background-position: center; text-align: center;">
+
+  <mat-toolbar style="background-image: url('assets/images/resf.jpg');; background-size: cover; background-position: center; text-align: center;">
+    <button mat-button routerLink="/configuration" routerLinkActive="active-link" class="btn-volver" style="color: white;">Volver</button>
+    <h3 class="title-nav">Resultados del Calculo</h3>
+    <span class="example-spacer"></span>
+    <div class="btn">
+      <button class="btn-img" mat-button>
+        <img src="assets/images/logo.jpeg" alt="introduction-image" routerLink="/introduction" style="width: 80px; height: 80px">
+      </button>
+    </div>
+    <!-- Añadir más botones según sea necesario -->
+  </mat-toolbar>
+
+
+  <div class="card" style="background-image: url('assets/images/inicio.jpg');; background-size: cover; background-position: center; text-align: center;">
+    <h3><b>Crédito Vehicular Inteligente</b></h3>
 
     <!-- Sección de VAN -->
     <div *ngIf="van !== undefined; else loadingVAN">
@@ -18,7 +31,7 @@
     <ng-template #loadingTIR>
       <p>Calculando la TIR...</p>
     </ng-template>
-
-    <button>Volver</button>
+    <button mat-button routerLink="/configuration" routerLinkActive="active-link" class="btn-volver" style="color: white;">Volver a la configuracion</button>
   </div>
+
 </div>

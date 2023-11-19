@@ -1,7 +1,7 @@
-<div class="configuracion">
-  <mat-toolbar>
+<div class="configuracion" style="background-image: url('assets/images/resf.jpg');; background-size: cover; background-position: center; text-align: center;">
+  <mat-toolbar style="background-image: url('assets/images/resf.jpg');; background-size: cover; background-position: center; text-align: center;">
     <button mat-button routerLink="/plan" routerLinkActive="active-link" class="btn-volver" style="color: white;">Volver</button>
-    <h2>Configuración del Cálculo</h2>
+    <h2 class="config-cal"><b>Configuración del Cálculo</b></h2>
     <span class="example-spacer"></span>
     <div class="btn">
       <button class="btn-img" mat-button>
@@ -10,7 +10,7 @@
     </div>
   </mat-toolbar>
 
-  <div>
+  <div class="fond-conf" style="background-image: url('assets/images/resf.jpg');; background-size: cover; background-position: center; text-align: center;">
   <form [formGroup]="configForm" (ngSubmit)="onSubmit()">
     <div>
       <mat-label>Periodo de Gracia</mat-label>

@@ -14,8 +14,8 @@ mat-toolbar {
   display: flex;
   justify-content: space-between; /* Distribuye el espacio equitativamente */
   align-items: center; /* Centra los elementos verticalmente */
-  background-color: #4caf50; /* Color de fondo del toolbar */
-  color: white;
+  background-color: white; /* Color de fondo del toolbar */
+  color: black;
   padding: 0 1rem;
   margin-bottom: 1rem;
 }
@@ -23,7 +23,7 @@ mat-toolbar {
   width: 100%; /* Asegúrate de que la fila del toolbar ocupe todo el ancho */
 }
 .btn-img {
-  margin-left: 13rem; /* Añade margen a la izquierda de la imagen si es necesario */
+  margin-left: 2rem; /* Añade margen a la izquierda de la imagen si es necesario */
 }
 
 .btn-volver {
@@ -34,7 +34,7 @@ mat-toolbar {
 
 .configuracion h2 {
   flex: 1;
-  font-size: 24px; /* Tamaño del título */
+  font-size: 38px; /* Tamaño del título */
   font-weight: 400; /* Peso de la fuente del título */
   margin: 0; /* Quitar márgenes predeterminados */
 }
@@ -50,6 +50,7 @@ mat-form-field, .mat-radio-group {
 /* Ajustes para las etiquetas de los campos de formulario y botones radio */
 mat-label, .mat-radio-button {
   color: #4caf50; /* Color de texto verde para coincidir con el esquema de colores */
+
 }
 
 /* Estilos para los botones radio */
@@ -83,4 +84,6 @@ input[matInput] {
   border-color: #e53935; /* Color de borde para campos inválidos */
   background-color: #ffebee; /* Fondo rojo claro para campos inválidos */
 }
-
+.fond-conf{
+  background-color: white;
+}
