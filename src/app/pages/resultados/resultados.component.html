@@ -1,30 +1,24 @@
 <div class="resultados-container">
-  <h2>Detalles del Plan</h2>
-  <!-- Suponiendo que tienes otros detalles del plan para mostrar aquí -->
+  <h2>Resultados del Calculo</h2>
+  <div class="card">
+    <h3>Crédito Vehicular Inteligente</h3>
 
-  <!-- Mostrar el VAN si está definido -->
-  <div *ngIf="van !== undefined">
-    <h3>Valor Actual Neto (VAN): {{ van | number:'1.2-2' }}</h3>
-    <p>El VAN es un indicador de la rentabilidad de la inversión. Un VAN positivo indica que los ingresos superan los costos, mientras que un VAN negativo indica lo contrario.</p>
+    <!-- Sección de VAN -->
+    <div *ngIf="van !== undefined; else loadingVAN">
+      <p><strong>Valor Actual Neto (VAN):</strong> {{ van | number:'1.2-2' }}</p>
+    </div>
+    <ng-template #loadingVAN>
+      <p>Calculando el VAN...</p>
+    </ng-template>
+
+    <!-- Sección de TIR -->
+    <div *ngIf="tir !== undefined; else loadingTIR">
+      <p><strong>Tasa Interna de Retorno (TIR):</strong> {{ tir | number:'1.2-2' }} %</p>
+    </div>
+    <ng-template #loadingTIR>
+      <p>Calculando la TIR...</p>
+    </ng-template>
+
+    <button>Volver</button>
   </div>
-
-  <!-- Mensaje si el VAN aún no se ha calculado -->
-  <div *ngIf="van === undefined">
-    <p>Calculando el VAN...</p>
-    <!-- Puedes agregar aquí un spinner o indicador de carga si lo consideras necesario -->
-  </div>
-
-  <!-- Mostrar la TIR si está definida -->
-  <div *ngIf="tir !== undefined">
-    <h3>Tasa Interna de Retorno (TIR): {{ tir | number:'1.2-2' }} %</h3>
-    <p>La TIR es la tasa de descuento a la que el valor presente de todos los flujos de caja (tanto positivos como negativos) es igual a cero. Una TIR superior a la tasa de descuento del costo de oportunidad del capital (COK) indica que el proyecto es rentable.</p>
-  </div>
-
-  <!-- Mensaje si la TIR aún no se ha calculado -->
-  <div *ngIf="tir === undefined">
-    <p>Calculando la TIR...</p>
-    <!-- Igualmente, podrías poner aquí un spinner o indicador de carga -->
-  </div>
-
-  <!-- Aquí puedes agregar más detalles o información relevante -->
 </div>
