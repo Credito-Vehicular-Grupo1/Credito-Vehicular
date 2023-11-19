@@ -23,11 +23,13 @@ mat-toolbar {
   width: 100%; /* Asegúrate de que la fila del toolbar ocupe todo el ancho */
 }
 .btn-img {
-  margin-left: 4rem; /* Añade margen a la izquierda de la imagen si es necesario */
+  margin-left: 13rem; /* Añade margen a la izquierda de la imagen si es necesario */
 }
 
 .btn-volver {
   margin-right: 4rem; /* Añade margen a la derecha del botón Volver si es necesario */
+  background-color: rgba(0, 128, 44, 1);
+  border-radius: 20px; /* Para aplicar la curva al botón */
 }
 
 .configuracion h2 {
@@ -81,3 +83,4 @@ input[matInput] {
   border-color: #e53935; /* Color de borde para campos inválidos */
   background-color: #ffebee; /* Fondo rojo claro para campos inválidos */
 }
+
