@@ -1,1 +1,18 @@
-<p>resultados works!</p>
+<div class="resultados-container">
+  <h2>Detalles del Plan</h2>
+  <!-- Suponiendo que tienes otros detalles del plan para mostrar aquí -->
+
+  <!-- Mostrar el VAN si está definido -->
+  <div *ngIf="van !== undefined">
+    <h3>Valor Actual Neto (VAN): {{ van | number:'1.2-2' }}</h3>
+    <p>El VAN es un indicador de la rentabilidad de la inversión. Un VAN positivo indica que los ingresos superan los costos, mientras que un VAN negativo indica lo contrario.</p>
+  </div>
+
+  <!-- Mensaje si el VAN aún no se ha calculado -->
+  <div *ngIf="van === undefined">
+    <p>Calculando el VAN...</p>
+    <!-- Puedes agregar aquí un spinner o indicador de carga si lo consideras necesario -->
+  </div>
+
+  <!-- Aquí puedes agregar más detalles o información relevante -->
+</div>

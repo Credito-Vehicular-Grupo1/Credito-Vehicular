@@ -31,7 +31,7 @@ export class ConfiguracionComponent {
         next: (response) => {
           console.log(response);
           // Aquí manejas la respuesta, como mostrar un mensaje de éxito o redirigir
-          this.router.navigate(['/resultados']);
+            this.router.navigate(['/resultados', response.id]);
         },
         error: (error) => {
           console.error(error);

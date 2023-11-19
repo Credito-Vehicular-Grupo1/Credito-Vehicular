@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'footer', component: FooterComponent},
   { path: 'configuration', component: ConfiguracionComponent},
   { path: 'oferta', component: OfertaComponent},
-  { path: 'resultados', component: ResultadosComponent}
+  { path: 'resultados/:planId', component: ResultadosComponent}
 ];
 
 @NgModule({
