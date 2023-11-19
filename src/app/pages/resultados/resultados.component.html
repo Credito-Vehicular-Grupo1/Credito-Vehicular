@@ -14,5 +14,17 @@
     <!-- Puedes agregar aquí un spinner o indicador de carga si lo consideras necesario -->
   </div>
 
+  <!-- Mostrar la TIR si está definida -->
+  <div *ngIf="tir !== undefined">
+    <h3>Tasa Interna de Retorno (TIR): {{ tir | number:'1.2-2' }} %</h3>
+    <p>La TIR es la tasa de descuento a la que el valor presente de todos los flujos de caja (tanto positivos como negativos) es igual a cero. Una TIR superior a la tasa de descuento del costo de oportunidad del capital (COK) indica que el proyecto es rentable.</p>
+  </div>
+
+  <!-- Mensaje si la TIR aún no se ha calculado -->
+  <div *ngIf="tir === undefined">
+    <p>Calculando la TIR...</p>
+    <!-- Igualmente, podrías poner aquí un spinner o indicador de carga -->
+  </div>
+
   <!-- Aquí puedes agregar más detalles o información relevante -->
 </div>
