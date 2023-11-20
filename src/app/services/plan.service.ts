@@ -7,7 +7,7 @@ import {AuthService} from "./auth.service";
   providedIn: 'root'
 })
 export class PlanService {
-  private plansUrl = 'http://localhost:8090/api/v1/users'; // URL base
+  private plansUrl = 'https://creditovehicular.onrender.com/api/v1/users'; // URL base
   constructor(private http: HttpClient, private authService: AuthService) { }
 
   createPlan(planData: any): Observable<any> {

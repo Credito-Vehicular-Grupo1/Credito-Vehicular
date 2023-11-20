@@ -6,7 +6,7 @@ import {Observable, tap} from "rxjs";
   providedIn: 'root'
 })
 export class AuthService {
-  private usersUrl = 'http://localhost:8090/api/v1/users';
+  private usersUrl = 'https://creditovehicular.onrender.com/api/v1/users';
   constructor(private http: HttpClient) { }
 
   login(email: string, password: string): Observable<any> {
